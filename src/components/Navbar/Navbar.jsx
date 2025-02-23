@@ -1,6 +1,7 @@
 import { Link, NavLink } from "react-router-dom";
 import { FaShoppingCart } from "react-icons/fa";
 import { FaRegHeart } from "react-icons/fa";
+import logo from "../../../public/Logo.png";
 const Navbar = () => {
   const links = (
     <>
@@ -52,7 +53,10 @@ const Navbar = () => {
             {links}
           </ul>
         </div>
-        <Link to="/">Gadget Heaven</Link>
+
+        <Link to="/">
+          <img src={logo} alt="logo" className="w-20 h-10" />
+        </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{links}</ul>
