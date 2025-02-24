@@ -1,15 +1,26 @@
-import React from "react";
+import { NavLink } from "react-router-dom";
+import { useState } from "react";
+const GadgetSidebar = ({ handleCategory }) => {
+  const [isClicked, setClicked] = useState("all");
+  const handleClicked = (category) => {
+    setClicked(category);
+    handleCategory(category);
+  };
 
-const GadgetSidebar = () => {
+  const categories = ["all", "Computer", "Phone", "Accessories", "Smart Watch"];
   return (
     <div className="bg-white max-h-fit w-44 pt-2 pb-2 rounded-lg text-left">
-      <button className="btn rounded-full m-2 w-36">All Product</button>
-      <button className="btn rounded-full m-2 w-36">Laptops</button>
-      <button className="btn rounded-full m-2 w-36">Phones</button>
-      <button className="btn rounded-full m-2 w-36">Accessories</button>
-      <button className="btn rounded-full m-2 w-36">Smart Watch</button>
-      <button className="btn rounded-full m-2 w-36">MacBook</button>
-      <button className="btn rounded-full m-2 w-36">Iphone</button>
+      {categories.map((category) => (
+        <button
+          key={category}
+          className={`btn rounded-full m-2 w-36 ${
+            isClicked === category ? "bg-[#9538E2] text-white" : "bg-gray-200"
+          }`}
+          onClick={() => handleClicked(category)}
+        >
+          {category === "all" ? "All Products" : category}
+        </button>
+      ))}
     </div>
   );
 };

@@ -6,14 +6,15 @@ import { useState } from "react";
 import { IoHeartDislikeOutline } from "react-icons/io5";
 import Swal from "sweetalert2";
 import { Helmet } from "react-helmet-async";
+import { addToStoredCartItem } from "../AddToDb";
 
 const GadgetDetails = () => {
-  const [cartItem, setCartItem] = useState(0);
   const [wishListItem, setWishListItem] = useState(false);
   const { id } = useParams();
   const data = useLoaderData();
   const details = data.find((gadget) => gadget.product_id == id);
-  const handleWishList = () => {
+  const handleWishList = (id) => {
+    console.log(id);
     setWishListItem(true);
     Swal.fire({
       title: "Hurrah!!!Item Added to the wishList section",
@@ -33,8 +34,9 @@ const GadgetDetails = () => {
       },
     });
   };
-  const handleCart = (title, image) => {
-    setCartItem(1);
+
+  const handleCart = (title, image, id) => {
+    addToStoredCartItem(id);
     Swal.fire({
       title: "Congratulations",
       text: `${title} is added to cart`,
@@ -100,7 +102,11 @@ const GadgetDetails = () => {
             <button
               className=" rounded-full bg-[#9538E2] text-white text-lg font-bold py-2 px-6 flex gap-2 items-center"
               onClick={() =>
-                handleCart(details.product_title, details.product_image)
+                handleCart(
+                  details.product_title,
+                  details.product_image,
+                  details.product_id
+                )
               }
             >
               Add To Cart <FaShoppingCart />
@@ -108,13 +114,19 @@ const GadgetDetails = () => {
 
             <button
               disabled={wishListItem}
-              onClick={handleWishList}
+              onClick={() => handleWishList(details.product_id)}
               className="bg-white rounded-full border-gray-100 border
               p-2 items-center hover:bg-purple-300"
             >
               {wishListItem ? <IoHeartDislikeOutline /> : <FaRegHeart />}
             </button>
           </div>
+          <Link
+            to="/"
+            className="btn rounded-full bg-[#9538E2] text-white text-lg font-bold py-2 px-6 flex gap-2 items-center w-fit"
+          >
+            Go Back
+          </Link>
         </div>
       </div>
     </div>

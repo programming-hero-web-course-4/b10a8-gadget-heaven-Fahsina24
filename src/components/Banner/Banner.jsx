@@ -4,7 +4,7 @@ const Banner = () => {
   return (
     <div className="mb-8">
       <div className="text-center w-11/12 pb-14 md:pb-20 min-h-fit bg-[#9538E2] mx-auto rounded-b-2xl ">
-        <h1 className="pt-6 text-white text-2xl md:text-5xl">
+        <h1 className="pt-6 text-white text-2xl md:text-3xl lg:text-5xl font-extrabold">
           Upgrade Your Tech Accessorize with <br />
           Gadget Heaven Accessories
         </h1>

@@ -2,7 +2,7 @@ import { Link, NavLink, useLocation } from "react-router-dom";
 import { FaShoppingCart } from "react-icons/fa";
 import { FaRegHeart } from "react-icons/fa";
 import logo from "../../assets/Logo.png";
-import { div } from "motion/react-client";
+
 const Navbar = () => {
   const { pathname } = useLocation();
   const NavbarBg = pathname == "/" ? "bg-[#9538E2]" : "bg-white";
@@ -11,28 +11,25 @@ const Navbar = () => {
     <>
       <NavLink
         to="/"
-        className="md:mr-6 p-2 hover:bg-green-200 hover:rounded-md"
+        style={({ isActive }) => {
+          return isActive ? { color: "black", background: "white" } : {};
+        }}
+        className="md:mr-6 p-2 "
       >
         Home
       </NavLink>
-      <Link
-        to="/statistics"
-        className="md:mr-6 p-2  hover:bg-green-200 hover:rounded-md"
-      >
+      <NavLink to="/statistics" className="md:mr-6 p-2">
         Statistics
-      </Link>
-      <Link
-        to="/dashboard"
-        className="hover:rounded-md hover:bg-green-200 p-2 "
-      >
+      </NavLink>
+      <NavLink to="/dashboard" className=" p-2 ">
         Dashboard
-      </Link>
+      </NavLink>
     </>
   );
 
   return (
     <div className="w-full  bg-white">
-      <div className={`navbar w-11/12 mx-auto ${NavbarBg}`}>
+      <div className={`navbar w-11/12 mx-auto ${NavbarBg} `}>
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
