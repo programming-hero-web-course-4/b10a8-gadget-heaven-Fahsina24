@@ -32,14 +32,14 @@ const Footer = () => {
   );
   return (
     <footer className="bg-white pt-16 pb-16">
-      <div className="text-center w-11/12 mx-auto border-red-800 border-2">
+      <div className="text-center w-11/12 mx-auto">
         <h1 className="text-black font-extrabold text-2xl">Gadget Heaven</h1>
         <p className="text-[#656374]">
           Leading the way in cutting-edge technology and innovation.
         </p>
         <div className="divider"></div>
       </div>
-      <div className="flex justify-evenly w-11/12 mx-auto text-center border-red-800 border-2">
+      <div className="flex justify-evenly w-11/12 mx-auto text-center ">
         <div>{services}</div>
         <div>{company}</div>
         <div>{legal}</div>

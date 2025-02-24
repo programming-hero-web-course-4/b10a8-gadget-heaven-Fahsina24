@@ -2,8 +2,8 @@ import { Link } from "react-router-dom";
 import bannerlogo from "../../assets/banner.jpg";
 const Banner = () => {
   return (
-    <div className="mt-6 mb-8">
-      <div className="text-center w-11/12 pb-14 md:pb-20 min-h-fit bg-[#9538E2] mx-auto rounded-2xl ">
+    <div className="mb-8">
+      <div className="text-center w-11/12 pb-14 md:pb-20 min-h-fit bg-[#9538E2] mx-auto rounded-b-2xl ">
         <h1 className="pt-6 text-white text-2xl md:text-5xl">
           Upgrade Your Tech Accessorize with <br />
           Gadget Heaven Accessories
