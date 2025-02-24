@@ -1,7 +1,7 @@
 import { Link, NavLink } from "react-router-dom";
 import { FaShoppingCart } from "react-icons/fa";
 import { FaRegHeart } from "react-icons/fa";
-import logo from "../../../public/Logo.png";
+import logo from "../../assets/Logo.png";
 const Navbar = () => {
   const links = (
     <>
@@ -27,7 +27,7 @@ const Navbar = () => {
   );
 
   return (
-    <div className="navbar bg-base-100">
+    <div className="navbar bg-white w-11/12 mx-auto border-red-700 border-2">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">

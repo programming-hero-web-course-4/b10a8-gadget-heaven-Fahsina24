@@ -1,0 +1,151 @@
+[
+  {
+    "product_id": 1,
+    "product_title": "MacBook Pro 14-inch",
+    "product_image": "https://macfinder.co.uk/wp-content/uploads/2022/12/img-MacBook-Pro-Retina-14-Inch-72383.jpg",
+    "category": "Computers",
+    "price": 1999,
+    "description": "Powerful laptop with M2 Pro chip.",
+    "specification": [
+      "M2 Pro chip",
+      "16GB RAM",
+      "512GB SSD",
+      "14-inch Retina display"
+    ],
+    "availability": true,
+    "rating": 4.8
+  },
+  {
+    "product_id": 2,
+    "product_title": "Dell XPS 13",
+    "product_image": "https://www.notebookcheck.net/fileadmin/Notebooks/Dell/XPS_13_9340_Core_Ultra_7/IMG_4090.JPG",
+    "category": "Computers",
+    "price": 1399,
+    "description": "Ultra-thin, high-performance laptop.",
+    "specification": [
+      "Intel i7 13th Gen",
+      "16GB RAM",
+      "1TB SSD",
+      "13.4-inch OLED display"
+    ],
+    "availability": true,
+    "rating": 4.7
+  },
+  {
+    "product_id": 3,
+    "product_title": "Samsung Galaxy S23 Ultra",
+    "product_image": "https://static.independent.co.uk/2023/02/01/18/samsung%20galaxy%20s23%20ultra%20hero%20pic.jpg",
+    "category": "Phones",
+    "price": 1199,
+    "description": "Flagship phone with S-Pen support.",
+    "specification": [
+      "Snapdragon 8 Gen 2",
+      "12GB RAM",
+      "256GB Storage",
+      "200MP Camera"
+    ],
+    "availability": true,
+    "rating": 4.9
+  },
+  {
+    "product_id": 4,
+    "product_title": "iPhone 14 Pro Max",
+    "product_image": "https://iphonespecialist.co.uk/wp-content/uploads/2024/06/iPhone-14-Pro-Max-back-glass-repair.jpg",
+    "category": "Phones",
+    "price": 1099,
+    "description": "Apple's premium smartphone with A16 Bionic chip.",
+    "specification": ["A16 Bionic", "6GB RAM", "128GB Storage", "48MP Camera"],
+    "availability": true,
+    "rating": 4.8
+  },
+  {
+    "product_id": 5,
+    "product_title": "Apple Watch Series 8",
+    "product_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTqjETyk_b47cdWfOcLULcRshLjRMfV_cRIA&s",
+    "category": "Smart Watches",
+    "price": 399,
+    "description": "Advanced health monitoring smartwatch.",
+    "specification": [
+      "ECG app",
+      "Blood Oxygen Sensor",
+      "Always-on Retina Display"
+    ],
+    "availability": true,
+    "rating": 4.7
+  },
+  {
+    "product_id": 6,
+    "product_title": "Samsung Galaxy Watch 5",
+    "product_image": "https://stg-images.samsung.com/is/image/samsung/p6pim/global/wearable/2208/global-wearable-SM-R905_Front_Graphite_Sports_Band_Graphite-533104814?$720_720_JPG$",
+    "category": "Smart Watches",
+    "price": 329,
+    "description": "Smartwatch with advanced fitness tracking.",
+    "specification": ["Wear OS", "BioActive Sensor", "40mm AMOLED Display"],
+    "availability": true,
+    "rating": 4.6
+  },
+  {
+    "product_id": 7,
+    "product_title": "Asus ROG Strix G16",
+    "product_image": "https://dlcdnwebimgs.asus.com/files/media/7307645F-321A-46F8-8DED-BEA6BFC2A968/v1/img/performance/rog-strix-g-16.png",
+    "category": "Computers",
+    "price": 1799,
+    "description": "High-performance gaming laptop.",
+    "specification": [
+      "Intel i9 13th Gen",
+      "32GB RAM",
+      "1TB SSD",
+      "16-inch QHD 240Hz"
+    ],
+    "availability": true,
+    "rating": 4.9
+  },
+  {
+    "product_id": 8,
+    "product_title": "HP Spectre x360",
+    "product_image": "https://www.europc.co.uk/92810-large_default/hp-spectre-x360-14-ef2014na-convertible-laptop-blue-intel-core-i7-1355u-16gb-ram-1tb-ssd-13-3000x2000-uhd-oled-touchscreen-hp-1-yr-wty-163375.jpg",
+    "category": "Computers",
+    "price": 1599,
+    "description": "Convertible 2-in-1 touchscreen laptop.",
+    "specification": [
+      "Intel i7 12th Gen",
+      "16GB RAM",
+      "512GB SSD",
+      "13.5-inch OLED"
+    ],
+    "availability": true,
+    "rating": 4.8
+  },
+  {
+    "product_id": 9,
+    "product_title": "Lenovo ThinkPad X1 Carbon",
+    "product_image": "https://m.media-amazon.com/images/I/61HC-VUXoRL.jpg",
+    "category": "Computers",
+    "price": 1699,
+    "description": "Business laptop with ultra-light design.",
+    "specification": [
+      "Intel i7 12th Gen",
+      "16GB RAM",
+      "1TB SSD",
+      "14-inch WUXGA"
+    ],
+    "availability": true,
+    "rating": 4.7
+  },
+  {
+    "product_id": 10,
+    "product_title": "Acer Predator Helios 300",
+    "product_image": "https://hothardware.com/ContentImages/Article/2788/content/small_acer_predator_helios_300_rear_angled_stock.jpg",
+    "category": "Computers",
+    "price": 1499,
+    "description": "Gaming laptop with high refresh rate display.",
+    "specification": [
+      "Intel i7 12th Gen",
+      "16GB RAM",
+      "512GB SSD",
+      "15.6-inch 165Hz"
+    ],
+    "availability": true,
+    "rating": 4.6
+  }
+]
