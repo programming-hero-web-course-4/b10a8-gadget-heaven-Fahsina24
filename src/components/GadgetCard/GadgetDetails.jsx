@@ -6,7 +6,7 @@ import { useState } from "react";
 import { IoHeartDislikeOutline } from "react-icons/io5";
 import Swal from "sweetalert2";
 import { Helmet } from "react-helmet-async";
-import { addToStoredCartItem } from "../AddToDb";
+import { addToStoredCartItem, addToWishListItem } from "../AddToDb";
 
 const GadgetDetails = () => {
   const [wishListItem, setWishListItem] = useState(false);
@@ -14,8 +14,8 @@ const GadgetDetails = () => {
   const data = useLoaderData();
   const details = data.find((gadget) => gadget.product_id == id);
   const handleWishList = (id) => {
-    console.log(id);
     setWishListItem(true);
+    addToWishListItem(id);
     Swal.fire({
       title: "Hurrah!!!Item Added to the wishList section",
       showClass: {
